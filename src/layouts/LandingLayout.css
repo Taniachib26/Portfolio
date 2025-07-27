@@ -1,0 +1,37 @@
+.landing-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+}
+.landing-header {
+  background: #22223b;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing-header nav a {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.landing-header nav a:hover {
+  color: #4ea8de;
+}
+.landing-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.landing-footer {
+  background: #22223b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.95rem;
+}
