@@ -5,8 +5,8 @@ const LandingPage: React.FC = () => {
   return (
     <LandingLayout>
       <section id="about">
-        <h2>Welcome!</h2>
-        <p>This is a basic landing page for your portfolio. Add your content here.</p>
+
+
       </section>
       <section id="projects">
         {/* <h2>Projects</h2>

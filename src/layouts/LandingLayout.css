@@ -1,37 +1,99 @@
 .landing-layout {
-  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #f3f3f3;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  background: #2e2e2e;
 }
 .landing-header {
-  background: #22223b;
-  color: #fff;
-  padding: 1.5rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  background: rgba(30, 30, 40, 0.85);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.landing-header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #00e6d0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.landing-header nav {
+  margin: 1rem 0;
 }
 .landing-header nav a {
-  color: #fff;
-  margin-left: 1.5rem;
+  color: #f3f3f3;
   text-decoration: none;
+  margin: 0 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
 }
 .landing-header nav a:hover {
-  color: #4ea8de;
+  color: #00e6d0;
+  border-bottom: 2px solid #00e6d0;
+}
+.landing-intro {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #b2fefa;
+  font-style: italic;
 }
 .landing-main {
   flex: 1;
-  padding: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto 0 auto;
+  padding: 0 1rem 2rem 1rem;
+}
+.landing-section {
+  background: rgba(255,255,255,0.07);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  margin-bottom: 2rem;
+  padding: 2rem 1.5rem;
+  transition: box-shadow 0.2s;
+}
+.landing-section:hover {
+  box-shadow: 0 6px 32px rgba(0,230,208,0.15);
+}
+.landing-section h2 {
+  color: #00e6d0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.landing-section ul {
+  padding-left: 1.2rem;
+}
+.landing-section li {
+  margin-bottom: 0.5rem;
+}
+.landing-section a {
+  color: #00e6d0;
+  text-decoration: underline;
 }
 .landing-footer {
-  background: #22223b;
-  color: #fff;
   text-align: center;
-  padding: 1rem 0;
-  font-size: 0.95rem;
+  padding: 1.2rem 0 0.7rem 0;
+  color: #b2fefa;
+  font-size: 1rem;
+  background: none;
+}
+@media (max-width: 600px) {
+  .landing-main {
+    max-width: 98vw;
+    padding: 0 0.2rem;
+  }
+  .landing-header h1 {
+    font-size: 2rem;
+  }
+  .landing-section {
+    padding: 1.2rem 0.5rem;
+  }
 }
