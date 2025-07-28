@@ -9,11 +9,11 @@ const LandingPage: React.FC = () => {
         <p>This is a basic landing page for your portfolio. Add your content here.</p>
       </section>
       <section id="projects">
-        <h2>Projects</h2>
+        {/* <h2>Projects</h2>
         <ul>
           <li>Project 1</li>
           <li>Project 2</li>
-        </ul>
+        </ul> */}
       </section>
       <section id="contact">
         <h2>Contact</h2>
