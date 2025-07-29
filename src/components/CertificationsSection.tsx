@@ -36,5 +36,6 @@ const CertificationsSection: React.FC = () => {
       </ul>
     </section>
   );
+
 };
 export default CertificationsSection;
